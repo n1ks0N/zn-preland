@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-cardin ®</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a class="header__title" href="#">A-cardin ®</a>
+        <a class="header__title" href="#"></a>
     </header>
     <main>
         <div class="main">
-            <h2 class="main__title">SKĄD JESTEŚ?</h2>
-            <button class="main__btn">Polska</button>
-            <button class="main__btn">Inne państwo</button>
+            <h2 class="main__title"></h2>
+            <button class="main__btn"></button>
+            <button class="main__btn"></button>
         </div>
-        <img src="tovar.png" alt="tovar" class="main__img">
+        <img src="" alt="tovar" class="main__img">
     </main>
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.querySelector('body').style.backgroundColor = '#fff'
+        document.querySelector("link[rel~='icon']").href = 'favicon.ico'
+        document.querySelector('.header__title').textContent = 'A-cardin ®'
+        document.querySelector('.main__title').textContent = 'SKĄD JESTEŚ?'
+        document.querySelectorAll('.main__btn')[0].textContent = 'Polska'
+        document.querySelectorAll('.main__btn')[1].textContent = 'Inne państwo'
+        document.querySelector('.main__img').src = "tovar.png"
+    </script>
 </body>
 
 </html>
