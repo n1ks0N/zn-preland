@@ -33,9 +33,9 @@
         document.title = land.name;
         document.querySelector('.main__title').textContent = land.title;
         document.querySelectorAll('.main__btn')[0].textContent = land.btnFirstText;
-        document.querySelectorAll('.main__btn')[0].addEventListener('click', () => window.open(`${land.btnFirstLink}`, '_blank'));
         document.querySelectorAll('.main__btn')[1].textContent = land.btnSecText;
-        document.querySelectorAll('.main__btn')[1].addEventListener('click', () => window.open(`${land.btnSecLink}`, '_blank'));
+        // document.querySelectorAll('.main__btn')[0].addEventListener('click', () => window.open(`${land.btnFirstLink}`, '_blank'));
+        // document.querySelectorAll('.main__btn')[1].addEventListener('click', () => window.open(`${land.btnSecLink}`, '_blank'));
         document.querySelector('.main__img_image').src = land.img;
     </script>
 </body>

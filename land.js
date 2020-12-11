@@ -4,8 +4,8 @@ var land = {
     name: 'A-cardin ®',
     title: 'SKĄD JESTEŚ?',
     btnFirstText: 'Polska',
-    btnFirstLink: '#',
     btnSecText: 'Inne państwo',
-    btnSecLink: '#',
+    // btnFirstLink: '#',
+    // btnSecLink: '#',
     img: 'https://i.ibb.co/dWjsRwQ/tovar-header.png'
 };
