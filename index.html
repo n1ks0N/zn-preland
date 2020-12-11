@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
@@ -21,17 +21,22 @@
             <button class="main__btn"></button>
             <button class="main__btn"></button>
         </div>
-        <img src="" alt="tovar" class="main__img">
+        <div class="main__img">
+            <img src="" alt="tovar" class="main__img_image">
+        </div>
     </main>
+    <script src="land.js"></script>
     <script>
-        document.querySelector('body').style.backgroundColor = '#fff'
-        document.querySelector("link[rel~='icon']").href = 'favicon.ico'
-        document.querySelector('.header__title').textContent = 'A-cardin ®'
-        document.title = 'A-cardin ®'
-        document.querySelector('.main__title').textContent = 'SKĄD JESTEŚ?'
-        document.querySelectorAll('.main__btn')[0].textContent = 'Polska'
-        document.querySelectorAll('.main__btn')[1].textContent = 'Inne państwo'
-        document.querySelector('.main__img').src = 'tovar.png'
+        document.querySelector('body').style.backgroundColor = land.bg;
+        document.querySelector('link[rel~="icon"]').href = land.favicon;
+        document.querySelector('.header__title').textContent = land.name;
+        document.title = land.name;
+        document.querySelector('.main__title').textContent = land.title;
+        document.querySelectorAll('.main__btn')[0].textContent = land.btnFirstText;
+        document.querySelectorAll('.main__btn')[0].addEventListener('click', () => window.open(`${land.btnFirstLink}`, '_blank'));
+        document.querySelectorAll('.main__btn')[1].textContent = land.btnSecText;
+        document.querySelectorAll('.main__btn')[1].addEventListener('click', () => window.open(`${land.btnSecLink}`, '_blank'));
+        document.querySelector('.main__img_image').src = land.img;
     </script>
 </body>
 
