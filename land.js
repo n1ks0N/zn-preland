@@ -7,5 +7,5 @@ var land = {
     btnFirstLink: '#',
     btnSecText: 'Inne państwo',
     btnSecLink: '#',
-    img: ''
+    img: 'https://i.ibb.co/dWjsRwQ/tovar-header.png'
 };
