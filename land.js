@@ -1,21 +1,21 @@
-const main = (land) => {
-    document.querySelector('body').style.backgroundColor = land.bg;
-    document.querySelector('link[rel~="icon"]').href = land.icon;
-    // document.querySelector('meta[name="description"]').setAttribute("content", land.desc);
-    document.querySelector('.header__title').textContent = land.name;
-    document.title = land.name;
-    document.querySelector('.main__title').textContent = land.title;
-    document.querySelectorAll('.main__btn')[0].textContent = land.btnFirstText;
-    document.querySelectorAll('.main__btn')[1].textContent = land.btnSecText;
-    // document.querySelectorAll('.main__btn')[0].addEventListener('click', () => window.open(`${land.btnFirstLink}`, '_blank'));
-    // document.querySelectorAll('.main__btn')[1].addEventListener('click', () => window.open(`${land.btnSecLink}`, '_blank'));
-    document.querySelector('.main__img_image').src = land.img;
+const main = (config) => {
+    document.querySelector('body').style.backgroundColor = config.bg;
+    document.querySelector('link[rel~="icon"]').href = config.icon;
+    // document.querySelector('meta[name="description"]').setAttribute("content", config.desc);
+    document.querySelector('.header__title').textContent = config.name;
+    document.title = config.name;
+    document.querySelector('.main__title').textContent = config.title;
+    document.querySelectorAll('.main__btn')[0].textContent = config.btnFirstText;
+    document.querySelectorAll('.main__btn')[1].textContent = config.btnSecText;
+    // document.querySelectorAll('.main__btn')[0].addEventListener('click', () => window.open(`${config.btnFirstLink}`, '_blank'));
+    // document.querySelectorAll('.main__btn')[1].addEventListener('click', () => window.open(`${config.btnSecLink}`, '_blank'));
+    document.querySelector('.main__img_image').src = config.img;
 };
 document.addEventListener('DOMContentLoaded', () => {
-    if (typeof land != 'undefined') {
-        main(land);
+    if (typeof config != 'undefined') {
+        main(config);
     } else {
-        const state = {
+        const config = {
             bg: '#fff',
             icon: 'https://ssl.gstatic.com/atari/images/favicon_2.ico',
             name: 'A-cardin ®',
@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // btnSecLink: '#',
             img: 'https://i.ibb.co/dWjsRwQ/tovar-header.png'
         };
-        main(state);
+        main(config);
     }
 });
