@@ -1,7 +1,8 @@
-var land = {
+const land = {
     bg: '#fff',
-    favicon: 'https://ssl.gstatic.com/atari/images/favicon_2.ico',
+    icon: 'https://ssl.gstatic.com/atari/images/favicon_2.ico',
     name: 'A-cardin ®',
+    // desc: '',
     title: 'SKĄD JESTEŚ?',
     btnFirstText: 'Polska',
     btnSecText: 'Inne państwo',

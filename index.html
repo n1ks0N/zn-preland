@@ -28,7 +28,8 @@
     <script src="land.js"></script>
     <script>
         document.querySelector('body').style.backgroundColor = land.bg;
-        document.querySelector('link[rel~="icon"]').href = land.favicon;
+        document.querySelector('link[rel~="icon"]').href = land.icon;
+        // document.querySelector('meta[name="description"]').setAttribute("content", land.desc);
         document.querySelector('.header__title').textContent = land.name;
         document.title = land.name;
         document.querySelector('.main__title').textContent = land.title;
